@@ -11,8 +11,8 @@ pipeline {
 
         stage('Build Docker Image') {
           steps {
-            sh 'cd /var/lib/jenkins/workspace/pipeline2/dockertest1'
-            sh 'cp  /var/lib/jenkins/workspace/pipeline2/dockertest1/* /var/lib/jenkins/workspace/pipeline2'
+            sh 'cd /var/lib/jenkins/workspace/pipeline22/dockertest1'
+            sh 'cp  /var/lib/jenkins/workspace/pipeline22/dockertest1/* /var/lib/jenkins/workspace/pipeline22'
             sh 'docker rmi medicherlat/pipelinetestdev:v1'
             sh 'docker build -t medicherlat/pipelinetest:v1 .'
             }
