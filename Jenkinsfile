@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build Docker Image') {
           steps {
-            sh 'cd /var/lib/jenkins/workspace/dockertest1_master@tmp'
+            sh 'cd /var/lib/jenkins/workspace/multibranchtesting_master/'
             sh 'docker rmi medicherlat/pipelinetest:v1'
             sh 'docker build -t medicherlat/pipelinetest:v1 .'
             }
